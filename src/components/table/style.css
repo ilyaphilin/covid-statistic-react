@@ -1,0 +1,87 @@
+main table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 20px;
+  margin-top: -20px;
+}
+
+main table tr {
+  height: 60px;
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+main table tr th {
+  color: white;
+}
+
+.tableHeader-first {
+  background: #2196f3;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.tableHeader-middle {
+  background: #2196f3;
+}
+
+.tableHeader-last {
+  background: #2196f3;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.tableHeader-first,
+.tableHeader-middle,
+.tableHeader-last {
+  cursor: pointer;
+}
+
+.tableHeader-first:hover,
+.tableHeader-middle:hover,
+.tableHeader-last:hover {
+  background: #0b75cc;
+}
+
+.tableElem {
+  cursor: pointer;
+}
+
+main table tr td {
+  cursor: pointer;
+}
+
+main table tr th,
+main table tr td {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+}
+
+main table tr th:first-child,
+main table tr th:first-child + th {
+  border-right: 1px solid #dadada;
+}
+
+main table tr td:first-child,
+main table tr td:first-child + td {
+  border-right: 1px solid #dadada;
+}
+
+main table tr th:first-child,
+main table tr td:first-child {
+  width: 4.5%;
+}
+
+main table tr th:first-child + th,
+main table tr th:last-child,
+main table tr td:first-child + td,
+main table tr td:last-child {
+  text-align: left;
+  padding-left: 25px;
+}
+
+main table tr th + th,
+main table tr td + td {
+  width: 64%;
+}
