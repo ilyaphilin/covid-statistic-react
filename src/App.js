@@ -8,7 +8,7 @@ function App() {
     <>
       <Header filterText={filterText} onFilterTextChange={setFilterText} />
       <main>
-        <Table filterText={filterText} setFilterText={setFilterText} />
+        <Table filterText={filterText} />
       </main>
     </>
   );

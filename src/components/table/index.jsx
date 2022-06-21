@@ -4,14 +4,11 @@ import Popup from '../popup';
 
 import './style.css';
 
-export default function Table({ filterText, setFilterText }) {
+export default function Table({ filterText }) {
   const { covidStats, isLoading } = useFetchCovidStatistic();
   const [selectedCountryStat, setSelectedCountryStat] = useState();
   if (isLoading) {
-    return (
-      // Зробити окремий компонент під спінер :-)
-      <h1>Loading...</h1>
-    );
+    return <h1>Loading...</h1>;
   }
 
   function handleClick(countryStat) {
@@ -42,12 +39,7 @@ export default function Table({ filterText, setFilterText }) {
             )
             .map((countryStat, index) => {
               return (
-                <tr
-                  className="tableElem"
-                  key={countryStat.id}
-                  // шоб сразу не вызвалось
-                  onClick={handleClick(countryStat)}
-                >
+                <tr className="tableElem" key={countryStat.id} onClick={handleClick(countryStat)}>
                   <td className="tableElem-first">{index + 1}</td>
                   <td className="tableElem-middle">{countryStat.country}</td>
                   <td className="tableElem-last">{countryStat.totalConfirmed}</td>
