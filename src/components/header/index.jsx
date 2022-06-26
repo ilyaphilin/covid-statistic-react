@@ -3,7 +3,6 @@ import logo from '../../assets/logo.png';
 import loupe from '../../assets/loupe.png';
 import './style.css';
 
-//
 export default function Header({ filterText, onFilterTextChange }) {
   return (
     <header>
