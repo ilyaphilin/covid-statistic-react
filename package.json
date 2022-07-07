@@ -2,6 +2,7 @@
   "name": "covid-statistic",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ilyaphilin.github.io/covid-statistic-react/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -18,7 +19,9 @@
     "eject": "react-scripts eject",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
-    "format": "prettier --write src"
+    "format": "prettier --write src",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +46,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0",
+    "gh-pages": "^4.0.0",
     "prettier": "^2.7.1"
   }
 }
